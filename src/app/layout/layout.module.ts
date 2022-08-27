@@ -1,11 +1,11 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { SideNavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
-import { MenuComponent } from './menu/menu.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -15,14 +15,13 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
   ],
   declarations: [
-    DashboardComponent,
-    MenuComponent,
+    SideNavComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent
   ],
   exports: [
-    DashboardComponent,
-    MenuComponent,
+    SideNavComponent,
     NavbarComponent,
     FooterComponent
   ],
