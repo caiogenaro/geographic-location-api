@@ -1,4 +1,25 @@
-img {
-    width:35px;
-    height:35px;
-}
+
+
+.footer-content {
+    position: absolute;
+    height:  160px;
+    min-height: 77px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    color: #FFF;
+    text-align: center;
+  }
+
+
+  .socials{
+    background-color: #000000;
+    color: #FFF;
+    display: inline-block;
+    text-align: left;
+  }
+  .uls{
+    background-color: #000000;
+  }
+
