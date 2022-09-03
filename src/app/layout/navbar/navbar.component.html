@@ -1,29 +1,38 @@
-<div class="top_nav" id="top-navbar">
-    <div class="nav_menu">
-      <nav>
-        <div class="nav toggle">
-          <a id="menu_toggle"><i class="glyphicon glyphicon-option-vertical"
-              style="margin: 3px 5px 0px -10px; color:#777"></i></a>
+  <div class="head-content">
+    <div class="head-content-left">
+      <div class="search-container">
+        <div class="normal-search">
+          <input type="search"
+          class="search" name="" id=""
+          placeholder="Search...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
         </div>
-  
-        <ul class="nav navbar-nav navbar-right">
-          <li id="navBarMenuSiglaSistema" style="border-left: 1px solid #D9DEE4; margin:0px 0px 0px 10px">
-            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"
-              style="font-family:Impact; font-size: 24px; color: #777">
-              <span style="color: #777;padding-right: 10px"> SDP </span> <span class="fa fa-angle-down"
-                style="color:#759A8F"></span>
-            </a>
-            <ul class="dropdown-menu dropdown-usermenu pull-right">
-              <li><a [routerLink]="'/home'"><i class="fa fa-desktop pull-right"></i> Página Inicial</a></li>
-              <li><a [routerLink]="'/profile'"><i class="fa fa-user pull-right"></i> Informações do
-                  usuário</a></li>
-              <li><a [routerLink]="'/setting'"><i class="glyphicon glyphicon-cog pull-right"></i>
-                  Configurações</a></li>
-              <li id="navBarMenuSiglaSistemaLogout"><a href="/portalsefaz-admin/logout"><i
-                    class="glyphicon glyphicon-off pull-right"></i> Log Out</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+
+      </div>
+    </div>
+    <div class="head-menu">
+      <div class="head-menu-item">
+        <button class="head-menu-item-btn ripple">
+          <img [src]="countriesFlag" class="flag" alt="flag">
+        </button>
+      <div class="head-menu-item">
+        <button class="head-menu-item-btn ripple">
+          <i class="far fa-bell menu-icon"></i>
+        </button>
+      </div>
+      <div class="head-menu-item">
+        <button class="head-menu-item-btn ripple">
+          <i class="far fa-comment-alt menu-icon"></i>
+        </button>
+      </div>
+      </div>
+    </div>
+    <div class="head-user-avatar-container">
+      <div class="head-user-avatar">
+        <img src="" alt="user" class="user-avatar">
+        <div class="circle-indicator pulse"></div>
+      </div>
     </div>
   </div>
+

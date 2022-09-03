@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: DashboardComponent },
-  { path: 'cadastro', component: CadastroComponent },
+  { path: 'cadastro', loadChildren: () => import('./pages/pages.module').then(x => x.PagesModule) },
   { path: 'profile', component: ProfileComponent }
 ];
 

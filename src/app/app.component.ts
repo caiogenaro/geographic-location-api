@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'geo-front';
 
   classNameBody = "body";
+  classNameHead = "head";
 
   isSideNavCollapsed = false;
   largura = 0;
@@ -20,6 +21,7 @@ export class AppComponent {
     this.isSideNavCollapsed = data.collapsed || false;
 
     this.classNameBody = this.checkClassType();
+    this.classNameHead = this.checkheaderType();
 
   }
 
@@ -29,6 +31,16 @@ export class AppComponent {
       styleClass = "body-trimmed"
     }else if (this.isSideNavCollapsed && this.largura <= 768 && this.largura > 0){
       styleClass = "body-md-screen"
+    }
+
+    return styleClass;    
+  }
+  checkheaderType(): any {
+    let styleClass = "head"
+    if(this.largura > 768 && this.isSideNavCollapsed){
+      styleClass = "head-trimmed"
+    }else if (this.isSideNavCollapsed && this.largura <= 768 && this.largura > 0){
+      styleClass = "head-md-screen"
     }
 
     return styleClass;    
