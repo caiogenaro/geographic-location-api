@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="col-md-12 col-xs-12">
+      <div class="x_panel">
+        <div class="x_title">
+          <h2><i class="fa fa-flag pull-left"></i> Cadastro</h2>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-12 col-xs-12" style="display: flex; justify-content: center">
+            <div class="col-md-6 col-xs-6">
+              <label for="emailInput" class="form-label">Email address</label>
+              <input type="email" class="form-control" [(ngModel)]="user.email" id="emailInput" placeholder="name@example.com">
+            </div>
+            <div class="col-md-6 col-xs-6">
+              <label for="passwordLabel" class="form-label">Password</label>
+              <input type="password" class="form-control" [(ngModel)]="user.password" id="passwordLabel" placeholder="password">
+            </div>
+          </div>
+
+          <div class="col-md-12 col-xs-12" style="display: flex; justify-content: center">
+            <div class="col-md-6 col-xs-6">
+              <label for="nomeInput" class="form-label">Nome</label>
+              <input type="text" class="form-control" [(ngModel)]="user.nome" id="nomeInput">
+            </div>
+            <div class="col-md-6 col-xs-6">
+              <label for="dateNascimentoLabel" class="form-label">Data Nascimento</label>
+              <input type="date" class="form-control" [(ngModel)]="user.dataNascimento" id="dateNascimentoLabel">
+            </div>
+          </div>
+          
+          <div class="col-md-12 col-xs-12" style="display: flex; justify-content: center">
+            <div class="col-md-6 col-xs-6">
+              <label for="sexoLabel" class="form-label">Sexo:</label>              
+              <select [(ngModel)]="user.sexo" class="form-control" aria-label="Default select example">
+                <option selected>Selecione seu sexo</option>
+                <option ngValue="Masculino">Masculino</option>
+                <option ngValue="Feminino">Feminino</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-xs-6">            
+              <label for="cpfLabel" class="form-label">CPF</label>
+              <input type="cpf" class="form-control" [(ngModel)]="user.cpf" id="cpfLabel">
+            </div>
+          </div>
+          
+
+          <div class="col-md-12 col-xs-12" style="display: flex;
+          justify-content: end; margin-top: 1rem;">
+            <button type="submit" (click)="cadastrarUsuario()" class="btn btn-primary mb-3">Cadastrar</button>
+          </div>
+
+
+        </div>
+
+
+
+
+  
+
+  
+  
+  
+      </div>
+    </div>
+  </div>
+  
