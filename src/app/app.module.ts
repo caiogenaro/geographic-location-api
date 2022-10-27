@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PagesModule } from './pages/pages.module';
 import { LayoutModule } from './layout/layout.module';
 import { NgModule } from '@angular/core';
@@ -17,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     HttpClientModule,
@@ -28,7 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
     NgxSpinnerModule,
     LayoutModule,
     SharedModule,
-    PagesModule
+    PagesModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   exports: [
     NgxSpinnerModule,

@@ -7,9 +7,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-18
 import { MatNativeDateModule } from '@angular/material/core';
 import { PageRoutingModule } from './page-routing.module';
+import { MensagemComponent } from '../shared/mensagem/mensagem.component';
 
 
 
@@ -27,7 +27,8 @@ import { PageRoutingModule } from './page-routing.module';
   ],
   declarations: [
     CadastroComponent,
-    ProfileComponent
+    ProfileComponent,
+    MensagemComponent
   ],
   exports: [
     CadastroComponent,

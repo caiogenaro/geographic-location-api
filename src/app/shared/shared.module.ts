@@ -9,9 +9,10 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     CommonModule,
     FormsModule
+    
   ],
   declarations: [  ],
-  exports: [],
+  exports: [ ],
   providers: [],
 })
 export class SharedModule { }

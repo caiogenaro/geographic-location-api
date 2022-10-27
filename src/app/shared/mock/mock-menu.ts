@@ -37,4 +37,20 @@ export const MENUMOCK: Menu[] = [
       },
     ],
   },
+
+  {
+    routerLink: 'csgo',
+    icon: 'fa-solid fa-id-card',
+    label: 'Cs GO',
+    items: [
+      {
+        routerLink: 'csgo/players',
+        label: 'Players',
+      },
+      {
+        routerLink: 'csgo/teams',
+        label: 'Teams',
+      },
+    ],
+  },
 ];

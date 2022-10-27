@@ -1,5 +1,4 @@
 import { ProfileComponent } from './pages/profile/profile.component';
-import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';

@@ -129,7 +129,7 @@ html , body{
     font-weight: 500
 }
 
-   .alert-success {
+   /* .alert-success {
        color: #ffffff;
        background-color:#5cb85c;
        border-color: #4cae4c
@@ -149,4 +149,4 @@ html , body{
        color: #E9EDEF;
        background-color: rgba(231, 76, 60, 0.88);
        border-color: rgba(231, 76, 60, 0.88)
-   }
+   } */

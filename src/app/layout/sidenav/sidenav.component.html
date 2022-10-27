@@ -17,6 +17,7 @@
         [routerLink]="menu.routerLink"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
+        (click)="expandir(menu)"
       >
         <i class="sidenav-link-icon" [ngClass]="menu.icon"></i>
         <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">{{menu.label}}</span>

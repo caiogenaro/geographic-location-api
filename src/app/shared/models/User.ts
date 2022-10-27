@@ -1,3 +1,4 @@
+import { PermisaoEnum } from './PermisaoEnum';
 import { SexoEnum } from "./SexoEnum";
 
 export class User {
@@ -8,6 +9,7 @@ export class User {
     email?: string = "";
     password?: string = "";
     cpf?: string;
+    permissao?: PermisaoEnum;
   
       static fromJson(jsonData: any): User {
           return Object.assign(new User(), jsonData);

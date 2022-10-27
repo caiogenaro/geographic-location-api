@@ -3,7 +3,7 @@ import { MENUMOCK } from '../shared/mock/mock-menu';
 
 export const PATH = {
   menuFixo: true,
-  url: 'http://127.0.0.1:8000/geoapi'
+  url: 'http://127.0.0.1:8080'
 };
 
 
